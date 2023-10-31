@@ -1,8 +1,13 @@
 import './App.css';
+import Header from './components/Header';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <h1>hello</h1>
+    <>
+    <Nav/>
+    <Header/>
+    </>
   );
 }
 
