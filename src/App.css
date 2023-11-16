@@ -113,6 +113,45 @@ button {
   border-radius: 20px;
 }
 
+/*-----booking form section--------*/
+
+form, .comfirm{
+  padding: 10px 13%;
+}
+
+.formField{
+  padding: 50px 20px;
+  background: #7FC4C5;
+}
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #FFEAE6;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.btnReceive input{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #F4CE14;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+
+}
+
+.comfirmed span{
+  color: blue;
+}
+
+
 
 
 @media screen and (max-width: 768px){
