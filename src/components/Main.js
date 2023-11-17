@@ -52,7 +52,7 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<Header />} />
                 <Route path="/booking" element={<BookingForm availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
-                <Route path="/confirmed" element={<ConfirmedBooking/> } />
+                <Route path="/confirmed" element={<ConfirmedBooking/>} />
             </Routes>
         </main>
 

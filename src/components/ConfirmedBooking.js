@@ -1,6 +1,6 @@
 import React from "react";
 
-const ConfirmedBooking = () => {
+const ConfirmedBooking = (props) => {
     return(
         <div className="confirmed">
             <div>
