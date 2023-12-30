@@ -1,16 +1,20 @@
-import './App.css';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Menu from './components/Menu';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
     <>
-    <Nav/>
-    <Main />
-    <Menu/>
-    <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/menu" element={<Menu />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

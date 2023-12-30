@@ -1,0 +1,64 @@
+.two-column-container {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  padding: 0px 13%;
+}
+
+.content-column {
+  flex: 1; /* Make the content column take up available space */
+  padding: 20px; /* Add some padding for spacing */
+  background-color: #DAA520;
+  display: flex; /* Use flexbox to center the content vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+}
+
+.content-column h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.order-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition effect for background-color */
+  margin: 10px;
+}
+
+.order-button:hover {
+  background-color: #1a641e;
+}
+
+.image-column {
+  flex: 1; /* Make the image column take up available space */
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  transition: background-image 0.5s ease, transform 0.5s ease; /* Add transition effect for background-image and transform */
+}
+
+.image-column:hover {
+  transform: scale(1.1); /* Apply a scale transformation on hover (adjust the scale factor as needed) */
+}
+
+.headerContainer {
+  color: white; /* Set text color to white */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
