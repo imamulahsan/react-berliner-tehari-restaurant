@@ -15,6 +15,15 @@
 .content-column h1{
   font-size: 50px;
   font-weight: bold;
+  color: black;
+  padding: 3px;
+}
+
+.content-column p{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 3px;
 }
 
 .order-button {
@@ -34,18 +43,19 @@
 
 .image-column {
   flex: 1; /* Make the image column take up available space */
-  background-size: cover; /* Ensure the background image covers the entire container */
-  background-position: center; /* Center the background image */
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  transition: background-image 0.5s ease, transform 0.5s ease; /* Add transition effect for background-image and transform */
 }
 
-.image-column:hover {
-  transform: scale(1.1); /* Apply a scale transformation on hover (adjust the scale factor as needed) */
+.banner-image {
+  width: 90%;
+  height: 550px;
+  margin-top: 50px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for box-shadow */
 }
 
+.banner-image:hover {
+  transform: scale(0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Add shadow effect on hover */
+}
 .headerContainer {
   color: white; /* Set text color to white */
 }
@@ -61,4 +71,24 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 0 13%;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.location-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }

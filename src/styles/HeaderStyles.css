@@ -19,7 +19,7 @@
 
   .navigation-menu li a:hover {
     text-decoration: none;
-    color: rgb(25, 190, 67);
+    color: #4caf50;
     font-size: large;
   }
   /* mobile view */
