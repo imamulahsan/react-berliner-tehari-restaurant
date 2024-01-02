@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
+import React from "react";
 import gallery1 from "../images/gallery1.jpg";
 import gallery2 from "../images/gallery2.jpg";
 import gallery3 from "../images/gallery3.jpg";
@@ -11,9 +10,7 @@ import gallery8 from "../images/gallery8.jpg";
 import gallery9 from "../images/gallery9.jpg";
 import gallery10 from "../images/gallery10.jpg";
 
-Modal.setAppElement("#root"); // Set the root element for accessibility
-
-const Gallery = () => {
+const Gallery = ({ openModal, closeModal }) => {
   // Replace these image URLs with the URLs of your actual images
   const imageUrls = [
     gallery1,
@@ -28,16 +25,8 @@ const Gallery = () => {
     gallery10,
   ];
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
-
-  const openModal = (imageUrl) => {
-    setSelectedImage(imageUrl);
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
+  const openImageModal = (imageUrl) => {
+    openModal(imageUrl);
   };
 
   return (
@@ -46,6 +35,7 @@ const Gallery = () => {
         style={{
           textAlign: "center",
           marginTop: "20px",
+          marginBottom: "20px",
           color: "black", // Make text transparent to show the background gradient
         }}
       >
@@ -58,33 +48,10 @@ const Gallery = () => {
             key={index}
             src={imageUrl}
             alt={` ${index + 1}`}
-            onClick={() => openModal(imageUrl)}
+            onClick={() => openImageModal(imageUrl)}
           />
         ))}
       </div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={{
-          overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-          },
-          content: {
-            maxWidth: "600px",
-            margin: "auto",
-            padding: "20px",
-            borderRadius: "8px",
-            zIndex: 1001,
-          },
-        }}
-      >
-        <img
-          src={selectedImage}
-          alt="Preview"
-          style={{ width: "100%", height: "auto" }}
-        />
-        <button onClick={closeModal}>Close</button>
-      </Modal>
     </>
   );
 };

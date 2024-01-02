@@ -8,7 +8,7 @@ import Location from "../components/Location";
 import Banner from "../images/banner.jpg";
 import Gallery from "../components/Gallery";
 
-const Home = () => {
+const Home = ({ openModal, closeModal }) => {
   const containerVariantsleft = {
     hidden: { opacity: 0.5, x: -200 },
     visible: { opacity: 1, x: 0, transition: { duration: 2 } },
@@ -53,7 +53,7 @@ const Home = () => {
       </div>
       <SpecialMenu />
       <Location />
-      <Gallery />
+      <Gallery openModal={openModal} closeModal={closeModal} />
     </Layout>
   );
 };

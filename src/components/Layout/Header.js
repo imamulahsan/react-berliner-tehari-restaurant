@@ -107,6 +107,7 @@ const Header = () => {
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
                 width: "240px",
+                zIndex: 1000, // Adjust the value as needed
               },
             }}
           >
