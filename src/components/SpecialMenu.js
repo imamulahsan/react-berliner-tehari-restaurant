@@ -63,7 +63,7 @@ const SpecialMenu = () => {
       </h1>
       <div
         style={{
-          backgroundColor: "#DAA520",
+          backgroundColor: "#e5f4e3",
           padding: "5px",
           textAlign: "center",
         }}

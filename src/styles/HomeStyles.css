@@ -6,7 +6,7 @@
 .content-column {
   flex: 1; /* Make the content column take up available space */
   padding: 20px; /* Add some padding for spacing */
-  background-color: #DAA520;
+  background-color: #e5f4e3;
   display: flex; /* Use flexbox to center the content vertically */
   flex-direction: column; /* Stack children vertically */
   justify-content: center; /* Center vertically */
@@ -50,6 +50,7 @@
   height: 550px;
   margin-top: 50px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for box-shadow */
+  border-radius: 10px;
 }
 
 .banner-image:hover {

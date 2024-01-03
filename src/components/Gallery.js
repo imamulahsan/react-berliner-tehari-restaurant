@@ -49,6 +49,7 @@ const Gallery = ({ openModal, closeModal }) => {
             src={imageUrl}
             alt={` ${index + 1}`}
             onClick={() => openImageModal(imageUrl)}
+            loading="lazy" // Add the loading="lazy" attribute for lazy loading
           />
         ))}
       </div>
