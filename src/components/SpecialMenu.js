@@ -93,7 +93,9 @@ const SpecialMenu = () => {
                 maxWidth: 345,
                 margin: "15px",
                 flex: "0 0 auto",
-                backgroundColor: "#F5CBA7",
+                backgroundColor: "#F9E79F",
+                transition: "background-color 0.3s", // Add a smooth transition
+                ":hover": { backgroundColor: "#6EA057" }, // Change this to your desired hover color
               }}
             >
               <CardActionArea>

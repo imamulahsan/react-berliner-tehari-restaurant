@@ -28,13 +28,24 @@ const Footer = () => {
         />
 
         {/* Middle side with links */}
-        <Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row", // Set flexDirection to "row"
+            marginBottom: "5px", // Add margin to the whole box
+            "& > *": {
+              marginRight: "10px", // Add margin to each link
+              textDecoration: "none", // Remove underline from links
+              color: "inherit", // Inherit color
+            },
+          }}
+        >
           {/* Add more links as needed */}
           <Link
             href="/home"
             color="inherit"
             underline="none"
-            sx={{ marginBottom: "5px" }}
+            sx={{ margin: "5px" }}
           >
             Home
           </Link>
@@ -42,7 +53,7 @@ const Footer = () => {
             href="/about"
             color="inherit"
             underline="none"
-            sx={{ display: "block", marginBottom: "5px" }}
+            sx={{ display: "block", margin: "5px" }}
           >
             About Us
           </Link>
@@ -50,7 +61,7 @@ const Footer = () => {
             href="/contact"
             color="inherit"
             underline="none"
-            sx={{ display: "block", marginBottom: "5px" }}
+            sx={{ display: "block", margin: "5px" }}
           >
             Contact Us
           </Link>

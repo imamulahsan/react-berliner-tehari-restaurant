@@ -50,6 +50,7 @@ const Gallery = ({ openModal, closeModal }) => {
             alt={` ${index + 1}`}
             onClick={() => openImageModal(imageUrl)}
             loading="lazy" // Add the loading="lazy" attribute for lazy loading
+            style={{ height: "400px" }} // Set a fixed height (adjust as needed)
           />
         ))}
       </div>
