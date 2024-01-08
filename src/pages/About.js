@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import Headchef from "../images/headchef.jpg";
 
 const About = () => {
   return (
@@ -15,15 +16,13 @@ const About = () => {
         {/* Column 1: Image */}
         <div className="content-column" style={{ textAlign: "center" }}>
           {/* You can add additional content or styling for the image column here */}
-          <h3 style={{ color: "#000000" }}>
-            Vettersstraße 54/110, 09126, Berlin
-          </h3>
+          <img className="banner-image" src={Headchef} alt="banner" />
         </div>
 
         {/* Column 2: Location Content */}
         <div className="content-column">
           <div className="headerContainer">
-            <h1>hello</h1>
+            <h1>Our head Chef</h1>
           </div>
         </div>
       </div>
