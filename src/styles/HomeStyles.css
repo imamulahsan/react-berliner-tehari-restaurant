@@ -94,3 +94,33 @@ button:hover {
   transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+
+.team-member-card {
+  background-color: #FCF3CF;
+  border: 5px solid #F9E79F;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 16px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px); /* Apply translation on hover */
+}
+.team-member-card img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10%;
+  margin-bottom: 12px;
+}
+
+.team-member-card h3 {
+  color: #333;
+}
+
+.team-member-card p {
+  color: #666;
+  margin-bottom: 8px;
+}

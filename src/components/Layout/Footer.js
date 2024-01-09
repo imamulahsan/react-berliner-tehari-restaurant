@@ -42,7 +42,7 @@ const Footer = () => {
         >
           {/* Add more links as needed */}
           <Link
-            href="/home"
+            href="/"
             color="inherit"
             underline="none"
             sx={{ margin: "5px" }}
