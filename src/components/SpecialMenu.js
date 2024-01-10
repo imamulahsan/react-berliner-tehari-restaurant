@@ -9,6 +9,7 @@ import { CardActionArea } from "@mui/material";
 import bannerImage from "../images/banner.jpg";
 import kababImage from "../images/kabab-platter.jpg";
 import mejbanImage from "../images/mejban-platter.jpg";
+import Swal from "sweetalert2";
 
 const SpecialMenu = () => {
   const containerVariantsdate = {
@@ -50,6 +51,15 @@ const SpecialMenu = () => {
     day: "numeric",
   });
 
+  const handleOrderNowClick = (recipeTitle) => {
+    Swal.fire({
+      title: "Order Placed!",
+      text: `You have ordered ${recipeTitle}. Enjoy your meal!`,
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+  };
+
   return (
     <>
       <h1
@@ -84,6 +94,7 @@ const SpecialMenu = () => {
             alignItems: "center",
             padding: "0px 13%",
             flexWrap: "wrap",
+            justifyContent: "space-around",
           }}
         >
           {specialRecipe.map((recipe) => (
@@ -123,6 +134,7 @@ const SpecialMenu = () => {
                     variant="contained"
                     color="primary"
                     style={{ marginTop: "10px" }}
+                    onClick={() => handleOrderNowClick(recipe.title)}
                   >
                     Order Now
                   </Button>

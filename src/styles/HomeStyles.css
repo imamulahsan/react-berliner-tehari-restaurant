@@ -1,3 +1,12 @@
+/*
+  =====================
+  Two-Column Container
+
+  Usage - Location.js, Home.js, Reserve.js, About.js
+  =====================
+*/
+
+
 .two-column-container {
   display: flex; /* Use flexbox to create a horizontal layout */
   padding: 0px 13%;
@@ -124,3 +133,47 @@ button:hover {
   color: #666;
   margin-bottom: 8px;
 }
+/*
+  =====================
+  CSS for smaller devices
+
+  Two-Column Container
+
+  Usage - Location.js, Home.js, Reserve.js, About.js
+  =====================
+*/
+
+/* Responsive styles for smaller screens using media queries */
+@media (max-width: 768px) {
+  .two-column-container {
+    flex-direction: column; /* Change to a vertical layout for smaller screens */
+  }
+
+  .content-column {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-top: 30px;
+  }
+
+  .content-column h1 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .content-column p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .banner-image {
+    width: 60%;
+    height: auto;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for box-shadow */
+    border-radius: 10px;
+  }
+
+  .banner-image:hover {
+    transform: scale(0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Add shadow effect on hover */
+  }
+}
+
+

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
+import Reserve from "./pages/Reserve";
 
 Modal.setAppElement("#root"); // Set the root element for accessibility
 
@@ -41,6 +42,10 @@ const App = () => {
           <Route
             path="/menu"
             element={<Menu openModal={openModal} closeModal={closeModal} />}
+          />
+          <Route
+            path="/reserve"
+            element={<Reserve openModal={openModal} closeModal={closeModal} />}
           />
         </Routes>
       </BrowserRouter>

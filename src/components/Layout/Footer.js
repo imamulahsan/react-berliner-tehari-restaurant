@@ -12,12 +12,12 @@ const Footer = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row", // Set flexDirection to "row"
+          flexDirection: "row", // Change flexDirection to "column" for smaller devices
           alignItems: "center",
           justifyContent: "space-between",
           bgcolor: "#000000",
           color: "white",
-          padding: "0 13%",
+          padding: "0 5%", // Adjust padding for smaller screens
         }}
       >
         {/* Left side with image */}
@@ -31,38 +31,23 @@ const Footer = () => {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row", // Set flexDirection to "row"
-            marginBottom: "5px", // Add margin to the whole box
+            flexDirection: "column", // Change flexDirection to "column" for smaller devices
+            marginBottom: "5px",
+            textAlign: "center", // Center-align text for smaller screens
             "& > *": {
-              marginRight: "10px", // Add margin to each link
-              textDecoration: "none", // Remove underline from links
-              color: "inherit", // Inherit color
+              margin: "5px",
+              textDecoration: "none",
+              color: "inherit",
             },
           }}
         >
-          {/* Add more links as needed */}
-          <Link
-            href="/"
-            color="inherit"
-            underline="none"
-            sx={{ margin: "5px" }}
-          >
+          <Link href="/" color="inherit" underline="none">
             Home
           </Link>
-          <Link
-            href="/about"
-            color="inherit"
-            underline="none"
-            sx={{ display: "block", margin: "5px" }}
-          >
+          <Link href="/about" color="inherit" underline="none">
             About Us
           </Link>
-          <Link
-            href="/contact"
-            color="inherit"
-            underline="none"
-            sx={{ display: "block", margin: "5px" }}
-          >
+          <Link href="/contact" color="inherit" underline="none">
             Contact Us
           </Link>
         </Box>
@@ -70,10 +55,11 @@ const Footer = () => {
         {/* Right side with social icons */}
         <Box
           sx={{
+            display: "flex",
             "& svg": {
-              fontSize: "60px",
+              fontSize: "40px", // Reduce icon size for smaller screens
               cursor: "pointer",
-              mb: 1, // Adjust margin-bottom for social icons
+              mb: 1,
             },
             "& svg:hover": {
               color: "goldenrod",
@@ -82,7 +68,6 @@ const Footer = () => {
             },
           }}
         >
-          {/* icons */}
           <InstagramIcon />
           <TwitterIcon />
           <GitHubIcon />

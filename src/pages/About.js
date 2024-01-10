@@ -153,11 +153,11 @@ const About = () => {
         Current Team
       </h1>
       <div
-        className="two-column-container"
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          flexWrap: "wrap", // Allow items to wrap to the next line on smaller screens
         }}
       >
         {/* Cooking Team Cards */}
