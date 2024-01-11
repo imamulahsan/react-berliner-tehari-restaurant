@@ -1,3 +1,21 @@
+# Live Website
+https://moonlit-figolla-a9b3ed.netlify.app/
+
+# A React Framework based Restaurant Frontend
+> User can view food menu 
+> Reserve a Table
+> Contact
+> View the Chefs Information
+> Live demo [Link](https://moonlit-figolla-a9b3ed.netlify.app/)
+
+
+# Technologies Used
+- React JS
+- React MUI
+- HTML5
+- CSS3
+- Javascript
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
