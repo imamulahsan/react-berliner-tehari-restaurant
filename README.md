@@ -2,10 +2,10 @@
 https://moonlit-figolla-a9b3ed.netlify.app/
 
 # A React Framework based Restaurant Frontend
-> User can view food menu 
-> Reserve a Table
-> Contact
-> View the Chefs Information
+> 1. User can view food menu 
+> 2. Reserve a Table
+> 3. Contact the Restaurant
+> 4. View the Chefs Information
 > Live demo [Link](https://moonlit-figolla-a9b3ed.netlify.app/)
 
 
