@@ -1,12 +1,12 @@
 # Live Website
-https://moonlit-figolla-a9b3ed.netlify.app/
+https://react-berliner-tehari-restaurant.netlify.app
 
 # A React Framework based Restaurant Frontend
 > 1. User can view food menu 
 > 2. Reserve a Table
 > 3. Contact the Restaurant
 > 4. View the Chefs Information
-> Live demo [Link](https://moonlit-figolla-a9b3ed.netlify.app/)
+> Live demo [Link](https://react-berliner-tehari-restaurant.netlify.app)
 
 
 # Technologies Used
